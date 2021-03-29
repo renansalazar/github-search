@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main__usersearch{
+    background-color: var(--colorBackgroundLight);
+    min-height: 90vh;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+.main__usersearch__title{
+    width: 100%;
+    text-align: center;
+    color: var(--colorText);
+}
+
+.main__usersearch__form{
+    width: 100%;
+    max-width: 400px;
+}
+
+.main__button{
+    background-color: var(--colorBackgroundSecondary);
+    width: 40px;
+    color: var(--colorTextLight);
+}
+
+.main__results{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.main__results ul{
+    padding: 0;
+}
+
+.main__results ul li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+    background-color: var(--colorBackgroundSecondary);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px var(--colorTextLigthLigth);
+    transition: all 500ms;
+}
+
+.main__results ul li:hover{
+    background-color:  var(--colorBorder);
+    color:  var(--colorBackgroundLight);
+}
+
+.main__results ul li a{
+    width: 30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img{
+    width: 60px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+
+.detail h3{
+    word-break: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail h3 a{
+    margin-left: 10px;
+}
+
+.detail img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.detail p{
+    word-break: break-word;
+    padding-bottom:0;
+    font-size: .9rem;
+}
+
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.count>div{
+    margin-left: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.count>div span{
+    margin: auto;
+    display: block;
+    width: 22px;
+}
+
+@media (min-width: 600px){
+    .main__results ul li{
+        font-size: 1.4rem;
+    }
+
+    .detail{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:16;
+        text-align: left;
+        padding: 10px;
+    }
+    .detail p{
+        margin: auto;
+        text-align: left;
+    }
+}
