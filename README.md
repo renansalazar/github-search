@@ -1,3 +1,5 @@
+# Github Search
+
 Esta es una aplicacion sencilla que utiliza las apis de github para buscar usuarios y repositorios en la plataforma. Se utilizo Next JS, Redux(middleware Thunk) y Bootstrap
 github-search-ten.vercel.app/
 Link: [https://github-search-ten.vercel.app/](https://github-search-ten.vercel.app/)
