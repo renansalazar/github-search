@@ -1,21 +1,23 @@
 .header{
-    display: flex;
+    display: grid;
     background-color: var(--colorLight);
     height: 10vh;
     padding: 0 20px;
+    grid-template-columns: repeat(3, 1fr);
 }
   
-  .header__collapse{
-    position: absolute;
-    top: 67px;
-    background-color: var(--colorLight);
-    color: var(--colorText);
-    width: 200px;
-    left: -20px;
-    border-radius: 0px 0px 5px 5px;
-    padding: 20px;
-    z-index: 10;
-  }
+.header__collapse{
+  position: absolute;
+  top: 67px;
+  background-color: var(--colorLight);
+  color: var(--colorText);
+  width: 200px;
+  left: -20px;
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  z-index: 10;
+}
+
   
   .themeswitch{
     border: 1px solid var(--colorBorder);

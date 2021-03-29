@@ -40,7 +40,7 @@ export default () =>{
 
     return (
         <header className={styles.header}>
-            <div className="col-4 d-flex">
+            <div className="d-flex">
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid p-0">
                 
@@ -76,9 +76,9 @@ export default () =>{
                 </div>
             </nav>
             </div>
-            <div className="col-4 pt-3 text-center">
+            <div className="pt-3 text-center">
             <Link href="/">
-                <a className="navbar-brand">
+                <a>
                     <Image
                         src="/img/Octocat.png"
                         alt="Logo de GIthub Search"
@@ -88,7 +88,7 @@ export default () =>{
                 </a>
             </Link>
             </div>
-            <div className="col-4 d-flex justify-content-end align-items-center">
+            <div className="d-flex justify-content-end align-items-center">
             <section className={styles.themeswitch}>
                 <label data-checked={scheme === SCHEMES.LIGHT}>
                     <input
