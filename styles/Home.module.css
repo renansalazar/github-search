@@ -1,6 +1,7 @@
 .container{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .main__usersearch{
@@ -34,6 +35,10 @@
   margin: auto;
 }
 
+.main__title svg{
+  height: 80px;
+}
+
 .main__referencia{
   width: 100%;
   text-align: center;
@@ -58,9 +63,9 @@
 
 @media (min-width: 600px) {
   .main{
-    flex-direction: row;
+    display: grid;
     height: 83vh;
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr;
   }
   
 }
